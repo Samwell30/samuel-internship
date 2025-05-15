@@ -11,7 +11,7 @@ const Author = () => {
   const [author, setAuthor] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(true);
   const [isFollowing, setIsFollowing] = React.useState(false);
-
+  //any comment
   async function fetchAuthor(authorId) {
     const response = await fetch(
       `https://us-central1-nft-cloud-functions.cloudfunctions.net/authors?author=${authorId}`
